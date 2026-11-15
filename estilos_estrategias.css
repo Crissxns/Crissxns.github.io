@@ -83,6 +83,40 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.cuadros .cabecera-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.ts {
+    background: linear-gradient(to right, #0077B6, #00B4D8);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 25px 0 35px;
+    border-radius: 15px;
+    font-size: 32px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cuadros {
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 30px;
+    background: #F1F5F9;
+    color: #03045E;
+    border-top: 7px solid #00B4D8;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.cuadros:hover {
+    transform: translateY(-4px);
+}
 .contactanos {
     background-color: #03045E;
     color: white;
