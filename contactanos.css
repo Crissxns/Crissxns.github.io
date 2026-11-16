@@ -126,23 +126,54 @@ body {
     background-color: #03045E;
 }
 
-footer {
+.contactanos {
     background-color: #03045E;
     color: white;
-    text-align: center;
-    margin: 0 17px 25px;
+    width: 98%;
+    margin: 20px auto;
     padding: 25px;
-    border-top: 4px solid #00B4D8;
     border-radius: 15px;
+    text-align: center;
+    border-top: 4px solid #00B4D8;
 }
 
-footer h3 {
-    font-size: 27px;
-    font-weight: bold;
+.contactos {
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-footer p {
+.insta p {
+    color: #90E0EF;
+    font-size: 17px;
+}
+
+.contactanos .cabecera-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     margin: 10px 0;
+}
+
+.contactanos img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin: 0;
+}
+
+.contactanos .insta,
+.contactanos .tiktok {
+    font-size: 16px;
+}
+
+.contactanos a {
+    color: #90E0EF;
+    text-decoration: none;
+}
+
+.contactanos a:hover {
+    color: #00B4D8;
 }
 
 
