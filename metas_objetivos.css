@@ -56,7 +56,12 @@ body {
     margin-left: auto;
 }
 
-.ts {
+.contenedor {
+    width: 100%;
+    padding: 20px;
+}
+
+.titulo {
     background: linear-gradient(to right, #0077B6, #00B4D8);
     color: white;
     text-align: center;
@@ -64,6 +69,12 @@ body {
     margin: 20px 0 35px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.titulo h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
 }
 
 .cuadros {
@@ -190,9 +201,8 @@ img {
 }
 
 @media (max-width: 768px) {
-    .ts {
-        font-size: 23px;
-        padding: 20px 12px;
+    .contenedor {
+        padding: 10px;
     }
 
     .cuadros {
@@ -224,8 +234,8 @@ img {
         height: 150px;
     }
 
-    .ts {
-        font-size: 21px;
+     .titulo h1 {
+        font-size: 20px;
     }
 
     .contactanos {
