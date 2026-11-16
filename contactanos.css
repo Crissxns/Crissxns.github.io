@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #03045E;
+
+    background: linear-gradient(to right,
+        #03045E,
+        #0077B6);
+}
+
+.barra {
+    background-color: #03045E;
+    padding: 8px 20px;
+}
+
+.barra .nav-link {
+    color: white;
+    font-size: 15px;
+    margin: 0 8px;
+}
+
+.barra .nav-link:hover,
+.barra .nav-link.active {
+    color: #00B4D8;
+}
+
+.navbar-toggler {
+    background-color: #CAF0F8;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 15px 20px 20px;
+}
+
+.encabezado h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.encabezado img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+}
+
+.contenido {
+    background-color: #F0F4F8;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto 60px;
+    border-top: 5px solid #00B4D8;
+    border-radius: 20px;
+}
+
+.contenido h2 {
+    color: #0077B6;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.red {
+    background-color: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(3, 4, 94, 0.15);
+    transition: transform 0.3s;
+}
+
+.red:hover {
+    transform: translateY(-7px);
+}
+
+.red img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.red h3 {
+    color: #023E8A;
+    font-weight: bold;
+}
+
+.red p {
+    color: #444;
+}
+
+.red a {
+    display: inline-block;
+    background-color: #0077B6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.red a:hover {
+    background-color: #03045E;
+}
+
+footer {
+    background-color: #03045E;
+    color: white;
+    text-align: center;
+    margin: 0 17px 25px;
+    padding: 25px;
+    border-top: 4px solid #00B4D8;
+    border-radius: 15px;
+}
+
+footer h3 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .encabezado h1 {
+        font-size: 35px;
+    }
+
+    .encabezado img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contenido {
+        padding: 25px 18px;
+    }
+
+    .red {
+        width: 100%;
+    }
+
+    .barra .nav-link {
+        margin: 3px 0;
+    }
+}
