@@ -1,0 +1,237 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #03045E;
+
+    background: linear-gradient(to right,
+        #03045E,
+        #0077B6);
+}
+
+.barra {
+    background-color: #03045E;
+    padding: 8px 20px;
+}
+
+.barra .nav-link {
+    color: white;
+    font-size: 15px;
+    margin: 0 8px;
+}
+
+.barra .nav-link:hover,
+.barra .nav-link.active {
+    color: #00B4D8;
+}
+
+.navbar-toggler {
+    background-color: #CAF0F8;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 15px 20px 20px;
+}
+
+.encabezado h1 {
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.encabezado img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+}
+
+.introduccion {
+    background-color: #F0F4F8;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto 45px;
+    border-top: 5px solid #00B4D8;
+    border-radius: 20px;
+}
+
+.introduccion h2 {
+    color: #0077B6;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.introduccion p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.catalogo {
+    background-color: #F0F4F8;
+    padding: 35px;
+    margin-bottom: 55px;
+    border-radius: 20px;
+    border-top: 5px solid #00B4D8;
+}
+
+.catalogo h2 {
+    text-align: center;
+    color: #0077B6;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.producto {
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(3, 4, 94, 0.15);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-7px);
+}
+
+.producto img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.producto .card-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    color: #023E8A;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-text {
+    color: #333;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.boton {
+    background-color: #0077B6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.boton:hover {
+    background-color: #03045E;
+    color: white;
+}
+
+footer {
+    background-color: #03045E;
+    color: white;
+    text-align: center;
+    margin: 0 17px 25px;
+    padding: 25px;
+    border-top: 4px solid #00B4D8;
+    border-radius: 15px;
+}
+
+footer h3 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+footer hr {
+    border-color: white;
+    opacity: 0.5;
+}
+
+footer p {
+    margin: 12px 0;
+}
+
+footer {
+    background-color: #03045E;
+    color: white;
+    text-align: center;
+    margin: 0 17px 25px;
+    padding: 25px;
+    border-top: 4px solid #00B4D8;
+    border-radius: 15px;
+}
+
+.contactos {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.contactanos hr {
+    border-color: white;
+    opacity: 0.5;
+}
+
+.cabecera-seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+
+.cabecera-seccion img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.cabecera-seccion a {
+    color: white;
+    text-decoration: none;
+}
+
+.cabecera-seccion a:hover {
+    color: #00B4D8;
+}
+
+@media (max-width: 768px) {
+
+    .encabezado h1 {
+        font-size: 35px;
+    }
+
+    .encabezado img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .introduccion {
+        padding: 22px;
+    }
+
+    .catalogo {
+        padding: 20px;
+    }
+
+    .barra .nav-link {
+        margin: 3px 0;
+    }
+
+    footer {
+        margin: 0 10px 15px;
+    }
+}
