@@ -137,7 +137,7 @@ img {
 }
 
 .footer-hidrotec {
-    background-color: #03045E; /* Azul institucional acorde a tu barra de navegación */
+    background-color: #03045E; 
     color: #ffffff;
     padding: 50px 20px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -156,7 +156,7 @@ img {
 }
 
 .footer-col h3 {
-    color: #00B4D8; /* Tono celeste de acento */
+    color: #00B4D8; 
     font-size: 24px;
     margin-bottom: 10px;
 }
