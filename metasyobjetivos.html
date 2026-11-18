@@ -11,34 +11,43 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 <body>
-    <nav class="navbar barra">
-        <ul class="nav w-100 justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="infoprincipal.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="valores.html">Conócenos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="metasyobjetivos.html">Objetivos y Metas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estrategias.html">Estrategias Empresariales</a>
+ <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #03045E;">
+    <div class="container-fluid">
 
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contactanos.html">Contactanos</a>
+        <a class="navbar-brand" href="index.html">HYDROTEC</a>
 
-            </li>
-           
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Cerrar sesión</a>
-            </li>
-        </ul>
-    </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="valores.html">Conócenos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="metas.html">Metas y Objetivos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div class="superprincipal">
     <div class="contenedor">
@@ -141,6 +150,40 @@
         </div>
     </div>
 </footer>
+<script>
+ window.difyChatbotConfig = {
+  token: 'c0rsgYc8kGabIVto',
+  baseUrl: 'https://udify.app',
+  inputs: {
+    // You can define the inputs from the Start node here
+    // key is the variable name
+    // e.g.
+    // name: "NAME"
+  },
+  systemVariables: {
+    // user_id: 'YOU CAN DEFINE USER ID HERE',
+    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+  },
+  userVariables: {
+    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+    // name: 'YOU CAN DEFINE USER NAME HERE',
+  },
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="c0rsgYc8kGabIVto"
+ defer>
+</script>
+<style>
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+  }
+</style>
 </body>
 
 </html>
