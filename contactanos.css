@@ -1,5 +1,4 @@
-
-    * {
+   * {
     box-sizing: border-box;
 }
 
@@ -145,7 +144,7 @@ body {
 }
 
 .superprincipal {
-    
+    background-image: url('imagenes/fondo3.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
