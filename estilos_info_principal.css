@@ -1,4 +1,4 @@
-    
+
 * {
     box-sizing: border-box;
 }
@@ -8,14 +8,30 @@ body {
     padding: 0;
     background: linear-gradient(to right, #03045E, #0077B6);
     font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
 .barra {
     width: 100%;
     background-color: #03045E;
     padding: 12px 25px;
-    margin: 0;
-    gap: 0px;
+}
+
+.barra .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barra .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.barra .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
 }
 
 .barra .nav-link {
@@ -26,28 +42,10 @@ body {
 .barra .nav-link:hover {
     color: #00B4D8;
 }
-.barra .container-fluid {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.barra .navbar-collapse {
-    display: flex !important;
-    justify-content: flex-end;
-}
-
-.barra .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
-}
-
 
 .encabezado {
     padding: 25px 10px;
+    text-align: center;
 }
 
 .titulo {
@@ -57,42 +55,42 @@ body {
     letter-spacing: 4px;
     margin-top: 15px;
 }
+
 .logo {
     display: block;
     margin: 0 auto 20px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;
 }
-
 
 .informacion {
     background-color: #F1F5F9;
-    color: #023E8A;
+    color: #222;
     width: 75%;
+    max-width: 900px;
     margin: 20px auto;
     padding: 25px;
     border-radius: 20px;
     border-top: 5px solid #00B4D8;
-}
-
-.informacion {
     text-align: center;
-    color: #222;
-    margin-bottom: 15px;
-}
-
-.informacion {
     line-height: 1.8;
     font-size: 16px;
 }
 
-#info{
+.informacion h2 {
     color: #0077B6;
     font-family: Arial, sans-serif;
 }
+
+#info {
+    color: #0077B6;
+    font-family: Arial, sans-serif;
+}
+
 .footer-hidrotec {
-    background-color: #03045E; /* Azul institucional acorde a tu barra de navegación */
+    background-color: #03045E;
     color: #ffffff;
     padding: 50px 20px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -105,13 +103,13 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-bottom: 40px;
 }
 
 .footer-col h3 {
-    color: #00B4D8; 
+    color: #00B4D8;
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -178,16 +176,39 @@ body {
     color: #b0b0b0;
 }
 
-
-
 @media (max-width: 768px) {
+
+    .barra .container-fluid {
+        justify-content: space-between;
+    }
+
+    .barra .navbar-collapse {
+        justify-content: flex-start;
+    }
+
+    .barra .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .barra .nav-link {
+        padding: 8px 0;
+    }
 
     .titulo {
         font-size: 35px;
     }
 
+    .logo {
+        width: 170px;
+        height: 170px;
+    }
+
     .informacion {
-        width: 94%;
+        width: 90%;
         padding: 20px;
     }
 
@@ -199,12 +220,11 @@ body {
         font-size: 15px;
     }
 
-    .contactanos {
-        width: 94%;
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
-
 }
-
 
 @media (max-width: 480px) {
 
@@ -215,6 +235,11 @@ body {
     .titulo {
         font-size: 28px;
         letter-spacing: 2px;
+    }
+
+    .logo {
+        width: 140px;
+        height: 140px;
     }
 
     .informacion {
@@ -231,13 +256,24 @@ body {
         line-height: 1.6;
     }
 
-    .contactanos {
-        width: 92%;
-        padding: 18px;
+    .footer-hidrotec {
+        padding: 35px 20px 20px;
     }
 
-    .contactos {
-        font-size: 23px;
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
+    .footer-col h3 {
+        font-size: 22px;
+    }
+
+    .footer-col h4 {
+        font-size: 17px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
 }
