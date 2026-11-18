@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -10,93 +10,78 @@
 </head>
 
 <body>
-   
+
     <nav class="barra">
-        <ul class="nav w-100 justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="infoprincipal.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="valores.html">Conócenos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="metasyobjetivos.html">Objetivos y Metas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estrategias.html">Estrategias Empresariales</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contactanos.html">Contáctanos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Cerrar sesión</a>
-            </li>
+        <ul>
+            <li><a href="infoprincipal.html">Inicio</a></li>
+            <li><a href="valores.html">Conócenos</a></li>
+            <li><a href="metasyobjetivos.html">Metas y Objetivos</a></li>
+            <li><a href="estrategias.html">Estrategias Empresariales</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
         </ul>
     </nav>
-    <h1>CONTACTANOS</h1>
 
-    <div class="contactanos">
-        <h2 class="contactos">Contactos</h2>
-        <hr>
+    <header class="encabezado">
+        <h1>HYDROTEC</h1>
+        <img src="imagenes/logo.png" alt="Logo HYDROTEC">
+    </header>
 
-        <div class="insta">
-            <div class="cabecera-seccion">
-                <img src="imagenes/logoinsta.png" alt="Logo de Instagram">
-                <span>Instagram:
-                    <a href="https://www.instagram.com/hydrotec_gt/" target="_blank">
-                        @hydrotec_gt
-                    </a>
-                </span>
+    <main class="contenido">
+
+        <h2>CONTACTANOS</h2>
+
+        <p class="descripcion">
+            ¡Nos gustaría saber de ti! Síguenos en nuestras redes sociales para conocer más sobre HYDROTEC y nuestros proyectos.
+        </p>
+
+        <div class="redes">
+
+            <div class="red">
+                <img src="imagenes/logoinsta.png" alt="Instagram">
+                <h3>Instagram</h3>
+                <p>Síguenos en nuestra cuenta oficial.</p>
+                <a href="https://www.instagram.com/hydrotec_gt/" target="_blank">
+                    @hydrotec_gt
+                </a>
             </div>
+
+            <div class="red">
+                <img src="imagenes/logotiktok1.png" alt="TikTok">
+                <h3>TikTok</h3>
+                <p>Conoce más sobre nuestras actividades.</p>
+                <a href="https://www.tiktok.com/@hydrotec_gt?lang=es" target="_blank">
+                    @hydrotec_gt
+                </a>
+            </div>
+
         </div>
 
-        <div class="tiktok">
-            <div class="cabecera-seccion">
-                <img src="imagenes/logotiktok1.png" alt="Logo de TikTok">
-                <span>TikTok:
-                    <a href="https://www.tiktok.com/@hydrotec_gt?lang=es" target="_blank">
-                        @hydrotec_gt
-                    </a>
-                </span>
-            </div>
-        </div>
-    </div>
-<script>
- window.difyChatbotConfig = {
-  token: 'c0rsgYc8kGabIVto',
-  baseUrl: 'https://udify.app',
-  inputs: {
-    // You can define the inputs from the Start node here
-    // key is the variable name
-    // e.g.
-    // name: "NAME"
-  },
-  systemVariables: {
-    // user_id: 'YOU CAN DEFINE USER ID HERE',
-    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
-  },
-  userVariables: {
-    
-  },
- }
-</script>
-<script
- src="https://udify.app/embed.min.js"
- id="c0rsgYc8kGabIVto"
- defer>
-</script>
-<style>
-  #dify-chatbot-bubble-button {
-    background-color: #1C64F2 !important;
-  }
-  #dify-chatbot-bubble-window {
-    width: 24rem !important;
-    height: 40rem !important;
-  }
-</style>
+    </main>
+
+    <script>
+        window.difyChatbotConfig = {
+            token: 'c0rsgYc8kGabIVto',
+            baseUrl: 'https://udify.app',
+            inputs: {},
+            systemVariables: {},
+            userVariables: {}
+        }
+    </script>
+
+    <script src="https://udify.app/embed.min.js" id="c0rsgYc8kGabIVto" defer></script>
+
+    <style>
+        #dify-chatbot-bubble-button {
+            background-color: #1C64F2 !important;
+        }
+
+        #dify-chatbot-bubble-window {
+            width: 24rem !important;
+            height: 40rem !important;
+        }
+    </style>
+
 </body>
-
 </html>
