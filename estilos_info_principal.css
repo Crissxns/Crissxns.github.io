@@ -27,7 +27,7 @@ body {
 
 .barra .navbar-collapse {
     display: flex !important;
-    flex-basis: auto !important;x 
+    flex-basis: auto !important;
     justify-content: flex-end;
 }
 
