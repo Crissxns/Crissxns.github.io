@@ -6,7 +6,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #03045E, #0077B6);
     font-family: Arial, sans-serif;
     min-height: 100vh;
 }
@@ -28,7 +27,7 @@ body {
 
 .barra .navbar-collapse {
     display: flex !important;
-    flex-basis: auto !important;
+    flex-basis: auto !important;x 
     justify-content: flex-end;
 }
 
