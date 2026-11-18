@@ -12,6 +12,52 @@ body {
     overflow-x: hidden;
 }
 
+.barra {
+    width: 100%;
+    background-color: #03045E;
+    padding: 12px 20px;
+    margin: 0;
+}
+
+.barra .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barra .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.barra .nav-link {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 14px !important;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.barra .nav-link:hover {
+    color: #00B4D8 !important;
+}
+
+.barra .navbar-toggler {
+    border: 1px solid white;
+    padding: 7px 10px;
+}
+
+.barra .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.barra .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
 .logo {
     display: block;
     margin: 0 auto 20px;
@@ -21,38 +67,13 @@ body {
     object-fit: cover;
 }
 
-.barra {
+.superprincipal {
+    background-image: url('imagenes/fondo3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    background-color: #03045E;
-    padding: 12px 15px;
-    margin: 0;
-}
-
-.barra .nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-    gap: 0;
-}
-
-.barra .nav-item {
-    display: block;
-}
-
-.barra .nav-link {
-    color: white !important;
-    font-size: 20px;
-    padding: 12px 16px;
-    white-space: nowrap;
-    transition: 0.3s;
-}
-
-.barra .nav-link:hover {
-    color: #00B4D8 !important;
+    min-height: 100vh;
 }
 
 .contenedor {
@@ -185,11 +206,6 @@ body {
     margin-bottom: 10px;
 }
 
-.footer-col i {
-    margin-right: 8px;
-    color: #00B4D8;
-}
-
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(144, 224, 239, 0.2);
@@ -205,29 +221,30 @@ hr {
     border-radius: 4px;
 }
 
-.superprincipal {
-    background-image: url('imagenes/fondo3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-}
-
-@media (max-width: 768px) {
-    .barra {
-        padding: 8px;
-    }
-
-    .barra .nav {
+@media (max-width: 991px) {
+    .barra .container-fluid {
         justify-content: flex-end;
     }
 
-    .barra .nav-link {
-        font-size: 15px;
-        padding: 9px 10px;
+    .barra .navbar-collapse {
+        width: 100%;
+        text-align: right;
     }
 
+    .barra .navbar-nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0;
+        padding-top: 10px;
+    }
+
+    .barra .nav-link {
+        font-size: 16px;
+        padding: 10px 5px !important;
+    }
+}
+
+@media (max-width: 768px) {
     .contenedor {
         padding: 12px;
     }
@@ -266,11 +283,6 @@ hr {
 }
 
 @media (max-width: 480px) {
-    .barra .nav-link {
-        font-size: 13px;
-        padding: 8px;
-    }
-
     .contenedor {
         padding: 10px;
     }
@@ -287,3 +299,4 @@ hr {
         font-size: 18px;
     }
 }
+
