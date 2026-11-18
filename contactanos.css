@@ -203,6 +203,93 @@ body {
     min-height: 100vh;
 }
 
+.footer-hidrotec {
+    background-color: #03045E;
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-hidrotec .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: #00B4D8;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-col h4 {
+    color: #90E0EF;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00B4D8;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col .slogan {
+    font-style: italic;
+    color: #90E0EF;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.footer-desc {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #00B4D8;
+    padding-left: 5px;
+}
+
+.footer-col p {
+    color: #e0e0e0;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-col i {
+    margin-right: 8px;
+    color: #00B4D8;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(144, 224, 239, 0.2);
+    padding-top: 20px;
+    font-size: 13px;
+    color: #b0b0b0;
+}
+
 @media (max-width: 768px) {
 
     .encabezado h1 {
