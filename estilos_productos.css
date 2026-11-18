@@ -277,13 +277,14 @@ body {
     min-height: 100vh;
 }
 .precio {
-    background-color: #0077B6;
+    background-color: #0077B6 !important;
     color: white;
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 @media (max-width: 768px) {
