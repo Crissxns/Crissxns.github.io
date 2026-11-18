@@ -47,11 +47,6 @@ body {
     gap: 10px;
     margin-left: auto;
 }
-
-.navbar-toggler {
-    background-color: #CAF0F8;
-}
-
 .encabezado {
     text-align: center;
     padding: 15px 20px 20px;
@@ -312,4 +307,3 @@ body {
         margin: 3px 0;
     }
 }
->>>>>>> 3cdbe9310cdd31efde0b22eb861895e541f0bf68
