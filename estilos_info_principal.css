@@ -11,31 +11,40 @@ body {
     min-height: 100vh;
 }
 
+
 .barra {
     width: 100%;
     background-color: #03045E;
     padding: 12px 25px;
+    margin: 0;
+    overflow-x: auto;
 }
 
 .barra .container-fluid {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    min-width: max-content;
 }
 
 .barra .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto !important;
     justify-content: flex-end;
 }
 
 .barra .navbar-nav {
     display: flex;
+    flex-direction: row !important;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: nowrap;
     margin-left: auto;
 }
 
 .barra .nav-link {
     color: white;
+    white-space: nowrap;
     transition: 0.3s;
 }
 
@@ -43,17 +52,31 @@ body {
     color: #00B4D8;
 }
 
+.superprincipal {
+    width: 100%;
+}
+
 .encabezado {
+    width: 100%;
     padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.titulo {
+.encabezado h1.titulo {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
     color: white;
     font-size: 45px;
     font-weight: bold;
     letter-spacing: 4px;
-    margin-top: 15px;
+    margin: 15px 0 20px 0 !important;
+    transform: none !important;
 }
 
 .logo {
@@ -178,26 +201,6 @@ body {
 
 @media (max-width: 768px) {
 
-    .barra .container-fluid {
-        justify-content: space-between;
-    }
-
-    .barra .navbar-collapse {
-        justify-content: flex-start;
-    }
-
-    .barra .navbar-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .barra .nav-link {
-        padding: 8px 0;
-    }
-
     .titulo {
         font-size: 35px;
     }
@@ -224,6 +227,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -276,4 +280,6 @@ body {
     .footer-bottom {
         font-size: 12px;
     }
+
 }
+
