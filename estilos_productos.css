@@ -16,41 +16,73 @@ body {
 
 .barra {
     width: 100%;
-    background-color: #03045E;
-    padding: 12px 25px;
-    margin: 0;
-    gap: 0px;
+    min-height: 75px;
+    background: #03045E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.barra .nav-link {
+.logo {
     color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.barra ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
-.barra .nav-link:hover {
-    color: #00B4D8;
-}
-.barra .container-fluid {
-    display: flex;
-    justify-content: flex-end;
+.barra ul li a:hover {
+    background: #00B4D8;
+    color: #03045E;
+    transform: translateY(-2px);
 }
 
-.barra .navbar-collapse {
-    display: flex !important;
-    justify-content: flex-end;
+.barra ul li .salir {
+    background: #0077B6;
 }
 
-.barra .navbar-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    margin-left: auto;
+.barra ul li .salir:hover {
+    background: #00B4D8;
+    color: #03045E;
 }
 
-.navbar-toggler {
-    background-color: #CAF0F8;
+@media (max-width: 900px) {
+    .barra {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .barra ul {
+        justify-content: center;
+    }
+
+    .barra ul li a {
+        font-size: 13px;
+        padding: 10px;
+    }
 }
 
 .encabezado {

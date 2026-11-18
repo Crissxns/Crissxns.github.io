@@ -11,41 +11,76 @@ body {
     background: linear-gradient(to right, #03045E, #0077B6);
     min-height: 100vh;
 }
-
 .barra {
     width: 100%;
-    background-color: #03045E;
-    padding: 12px 25px;
+    min-height: 75px;
+    background: #03045E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .barra ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 10px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.barra ul li {
-    list-style: none;
-}
-
-.barra .nav-link,
 .barra ul li a {
+    display: block;
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 14px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
 .barra ul li a:hover {
-    color: #00B4D8;
+    background: #00B4D8;
+    color: #03045E;
+    transform: translateY(-2px);
 }
 
+.barra ul li .salir {
+    background: #0077B6;
+}
+
+.barra ul li .salir:hover {
+    background: #00B4D8;
+    color: #03045E;
+}
+
+@media (max-width: 900px) {
+    .barra {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .barra ul {
+        justify-content: center;
+    }
+
+    .barra ul li a {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
 .encabezado {
     text-align: center;
     padding: 15px 20px 20px;
