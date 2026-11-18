@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-* {
-    box-sizing: border-box;
-}
-body {
-    background: linear-gradient(to right, #003049, #0096c7);
-    margin: 0;
-}
-.cabecera-seccion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-.insta img,
-.tiktok img {
-    display: block;
-    width: 100px;
-    height: 50px;
-    object-fit: cover;
-    margin: 0;
-    border-radius: 25%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-=======
-
 * {
     box-sizing: border-box;
 }
