@@ -20,6 +20,7 @@ body {
     object-fit: cover;
 }
 
+
 .barra {
     width: 100%;
     background-color: #03045E;
@@ -36,7 +37,6 @@ body {
 .barra .nav-link:hover {
     color: #00B4D8;
 }
-
 .barra .container-fluid {
     display: flex;
     justify-content: flex-end;
@@ -78,17 +78,21 @@ body {
     margin: 0;
     font-weight: bold;
 }
-
 .grid-objetivos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 25px; 
+}
+.grid-objetivos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px; 
 }
 
 .cuadros {
     max-width: 1200px;
     margin: 25px auto;
-    padding: 25px;
+    padding: 25px; 
     background: #F1F5F9;
     color: #03045E;
     border-top: 7px solid #00B4D8;
@@ -97,7 +101,7 @@ body {
     transition: 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; 
 }
 
 .cuadros:hover {
@@ -109,14 +113,14 @@ body {
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
-    margin-bottom: 10px;
-    border-bottom: none;
+    margin-bottom: 10px; 
+    border-bottom: none; 
     padding-bottom: 0;
 }
 
 h2 {
     color: #0077B6;
-    font-size: 20px;
+    font-size: 20px; 
     margin-bottom: 0;
     text-align: left;
 }
@@ -124,15 +128,14 @@ h2 {
 ol {
     padding-left: 20px;
     line-height: 1.5;
-    margin-top: 0px !important;
+    margin-top: 0px !important; 
     padding-top: 0px !important;
 }
 
 li {
-    margin-bottom: 8px !important;
+    margin-bottom: 8px !important; 
     font-size: 14px;
 }
-
 .cuadros .cabecera-seccion img {
     display: block;
     width: 65px;
@@ -144,10 +147,8 @@ li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-/* FOOTER */
-
 .footer-hidrotec {
-    background-color: #03045E;
+    background-color: #03045E; 
     color: #ffffff;
     padding: 50px 20px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -166,7 +167,7 @@ li {
 }
 
 .footer-col h3 {
-    color: #00B4D8;
+    color: #00B4D8; 
     font-size: 24px;
     margin-bottom: 10px;
 }
@@ -242,8 +243,65 @@ li {
     min-height: 100vh;
 }
 
-/* NAVBAR UNIFICADO HYDROTEC */
 
+@media (max-width: 991px) {
+    .barra .navbar-collapse {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .barra .navbar-nav {
+        align-items: flex-end;
+        gap: 0;
+    }
+
+    .barra .nav-link {
+        text-align: right;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 12px;
+    }
+
+    .grid-objetivos {
+        grid-template-columns: 1fr; 
+    }
+
+    .cuadros {
+        padding: 20px;
+    }
+
+    .cuadros .cabecera-seccion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+    }
+}
+
+
+/* ===== NAVBAR UNIFICADO HYDROTEC ===== */
 .barra {
     width: 100%;
     min-height: 75px;
@@ -295,6 +353,7 @@ li {
     font-family: 'Segoe UI', Arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
+    line-height: 1.2;
     padding: 12px 14px;
     border: 0;
     border-radius: 8px;
@@ -318,25 +377,6 @@ li {
     color: #03045E;
 }
 
-/* AJUSTES RESPONSIVOS */
-
-@media (max-width: 991px) {
-    .barra .navbar-collapse {
-        width: 100%;
-        padding-top: 10px;
-    }
-
-    .barra .navbar-nav {
-        align-items: flex-end;
-        gap: 0;
-    }
-
-    .barra .nav-link {
-        text-align: right;
-        padding: 10px 15px;
-    }
-}
-
 @media (max-width: 900px) {
     .barra {
         flex-direction: column;
@@ -355,134 +395,130 @@ li {
     }
 }
 
-@media (max-width: 768px) {
-    .contenedor {
-        padding: 12px;
-    }
-
-    .grid-objetivos {
-        grid-template-columns: 1fr;
-    }
-
-    .cuadros {
-        padding: 20px;
-    }
-
-    .cuadros .cabecera-seccion {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    h2 {
-        font-size: 18px;
-        text-align: center;
-    }
-
-    .titulo h1 {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 130px;
-        height: 130px;
-    }
-
-    .titulo h1 {
-        font-size: 20px;
-    }
-}
-
-nav.barra {
+/* ===== NAVBAR RESPONSIVE UNIFICADO HYDROTEC ===== */
+body nav.barra {
     width: 100% !important;
-    height: 75px !important;
     min-height: 75px !important;
-    padding: 0 35px !important;
+    height: auto !important;
     margin: 0 !important;
-
+    padding: 12px 24px !important;
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center !important;
-
-    background-color: #03045E !important;
+    gap: 12px !important;
     box-sizing: border-box !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background: #03045E !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
 }
 
-nav.barra .barra-logo {
+body nav.barra .barra-logo {
     display: block !important;
-    color: #ffffff !important;
-    font-size: 22px !important;
-    font-weight: bold !important;
-    letter-spacing: 2px !important;
+    flex: 0 0 auto !important;
     margin: 0 !important;
     padding: 0 !important;
+    color: #ffffff !important;
+    font-family: 'Segoe UI', Arial, sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.2 !important;
     white-space: nowrap !important;
 }
 
-
-nav.barra ul {
+body nav.barra ul {
     display: flex !important;
+    flex: 1 1 auto !important;
     flex-direction: row !important;
+    flex-wrap: wrap !important;
     justify-content: flex-end !important;
     align-items: center !important;
-    flex-wrap: nowrap !important;
-
-    gap: 10px !important;
+    gap: 6px !important;
+    width: auto !important;
     margin: 0 !important;
     padding: 0 !important;
     list-style: none !important;
 }
 
-nav.barra ul li {
+body nav.barra ul li {
     display: block !important;
+    flex: 0 0 auto !important;
     margin: 0 !important;
     padding: 0 !important;
     list-style: none !important;
 }
 
-nav.barra ul li a {
+body nav.barra ul li a {
     display: block !important;
+    margin: 0 !important;
+    padding: 10px 12px !important;
+    border: 0 !important;
+    border-radius: 8px !important;
+    background: transparent !important;
     color: #ffffff !important;
-    text-decoration: none !important;
-    font-size: 14px !important;
+    font-family: 'Segoe UI', Arial, sans-serif !important;
+    font-size: 13px !important;
     font-weight: 600 !important;
     line-height: 1.2 !important;
-    padding: 12px 14px !important;
-    margin: 0 !important;
-    border-radius: 8px;
+    text-align: center !important;
+    text-decoration: none !important;
     white-space: nowrap !important;
-    background: transparent !important;
-    transition: 0.3s;
+    transition: background-color 0.3s, color 0.3s !important;
 }
 
-nav.barra ul li a:hover {
-    background-color: #00B4D8 !important;
+body nav.barra ul li a:hover {
+    background: #00B4D8 !important;
     color: #03045E !important;
 }
 
-nav.barra ul li a.salir {
-    background-color: #0077B6 !important;
+body nav.barra ul li a.salir {
+    background: #0077B6 !important;
+    color: #ffffff !important;
 }
 
-nav.barra ul li a.salir:hover {
-    background-color: #00B4D8 !important;
+body nav.barra ul li a.salir:hover {
+    background: #00B4D8 !important;
     color: #03045E !important;
 }
 
 @media (max-width: 900px) {
-    nav.barra {
-        height: auto !important;
-        min-height: 75px !important;
+    body nav.barra {
         flex-direction: column !important;
-        gap: 12px !important;
-        padding: 15px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 12px 14px !important;
     }
 
-    nav.barra ul {
-        flex-wrap: wrap !important;
+    body nav.barra ul {
+        flex: 0 1 auto !important;
         justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+
+    body nav.barra ul li a {
+        padding: 9px 10px !important;
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body nav.barra {
+        padding: 10px 8px !important;
+        gap: 8px !important;
+    }
+
+    body nav.barra .barra-logo {
+        font-size: 20px !important;
+    }
+
+    body nav.barra ul {
+        gap: 3px !important;
+    }
+
+    body nav.barra ul li a {
+        padding: 8px 7px !important;
+        font-size: 11px !important;
     }
 }
