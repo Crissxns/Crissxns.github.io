@@ -221,6 +221,14 @@ hr {
     border-radius: 4px;
 }
 
+.cuadros img {
+  display: block;
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 15%;
+}
+
 @media (max-width: 991px) {
     .barra .container-fluid {
         justify-content: flex-end;
@@ -279,6 +287,10 @@ hr {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+    .estrategia {
+        width: 570px;
+        height: 250px;
     }
 }
 
