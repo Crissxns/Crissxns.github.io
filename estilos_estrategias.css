@@ -392,3 +392,14 @@ hr {
         padding: 10px;
     }
 }
+
+.barra ul li a.salir {
+    background-color: #0077B6 !important;
+    color: #ffffff !important;
+    border-radius: 8px;
+}
+
+.barra ul li a.salir:hover {
+    background-color: #00B4D8 !important;
+    color: #03045E !important;
+}
