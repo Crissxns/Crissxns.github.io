@@ -291,3 +291,95 @@ body {
 
 }
 
+
+/* ===== NAVBAR UNIFICADO HYDROTEC ===== */
+.barra {
+    width: 100%;
+    min-height: 75px;
+    background: #03045E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+}
+
+.barra .barra-logo {
+    color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.barra ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.barra ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.barra ul li a:hover {
+    background: #00B4D8;
+    color: #03045E;
+    transform: translateY(-2px);
+}
+
+.barra ul li a.salir {
+    background: #0077B6;
+}
+
+.barra ul li a.salir:hover {
+    background: #00B4D8;
+    color: #03045E;
+}
+
+@media (max-width: 900px) {
+    .barra {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    .barra ul {
+        justify-content: center;
+    }
+
+    .barra ul li a {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
